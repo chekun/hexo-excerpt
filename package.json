@@ -1,0 +1,36 @@
+{
+  "name": "hexo-excerpt",
+  "version": "1.0.0",
+  "description": "Automatic excerpt generator for Hexo!",
+  "main": "index",
+  "scripts": {
+    "eslint": "eslint .",
+    "jscs": "jscs .",
+    "test": "mocha tests/index.js",
+    "test-cover": "istanbul cover --print both _mocha -- tests/index.js"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "repository": "chekun/hexo-excerpt",
+  "homepage": "https://chekun.me/post/hexo-excerpt",
+  "keywords": [
+    "hexo",
+    "excerpt"
+  ],
+  "author": "Kun Che <mr.che.kun@gmail.com> (https://chekun.me/)",
+  "license": "MIT",
+  "dependencies": {
+    "htmlparser2": "^3.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^2.7.0",
+    "eslint-config-hexo": "^1.0.2",
+    "hexo": "^3.1.1",
+    "istanbul": "^0.4.1",
+    "jscs": "^2.6.0",
+    "jscs-preset-hexo": "^1.0.1",
+    "mocha": "^2.3.4"
+  }
+}
