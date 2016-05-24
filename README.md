@@ -16,7 +16,7 @@ $ npm install hexo-excerpt --save
 
 ## How?
 
-This plugin runs through all your posts, if your post has more then 10 direct tags, then the first 10 tags will be the excerpt, otherwise, excerpt will be not applied!
+This plugin runs through all your posts, if your post has more than 10 direct tags, then the first 10 tags will be the excerpt, otherwise, excerpt will be not applied!
 
 ## License
 
