@@ -33,7 +33,7 @@ let fakeHexoLocals = {
       `.trim()
     }
   ]
-}
+};
 
 describe('Automatic excerpt generator', () => {
 
