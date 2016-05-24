@@ -31,6 +31,16 @@ let fakeHexoLocals = {
 <p>block 10</p>
 <p>block 11</p>
       `.trim()
+    },
+    {
+      path: '',
+      title: 'post with user defined more seperator',
+      excerpt: '',
+      content: `
+<p>block 1</p>
+<!-- more -->
+<p>block 2 <span>123</span></p>
+<div>block3</div>`.trim()
     }
   ]
 };
@@ -46,6 +56,10 @@ describe('Automatic excerpt generator', () => {
   it('post with > 10 tags should have excerpt', () => {
     generatedPosts[1].data.excerpt.should.not.equal('');
     generatedPosts[1].data.excerpt.should.equal('<p>block 1</p>\n<p>block 2</p>\n<p>block 3</p>\n<p>block 4</p>\n<p>block 5</p>\n');
+  });
+
+  it('post with <!-- more --> should return the way it is', () => {
+    generatedPosts[2].data.excerpt.should.equal('');
   });
 
 });

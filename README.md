@@ -14,6 +14,11 @@ $ npm install hexo-excerpt --save
 
 > This Plugin use es6 syntax, make sure your node support it.
 
+## Features
+
+- <!-- more --> still works!
+- If you're lazy as I am, the plugin generate the excerpt for you, without breaking your sentences or codes!
+
 ## How?
 
 This plugin runs through all your posts, if your post has more than 10 direct tags, then the first 10 tags will be the excerpt, otherwise, excerpt will be not applied!
