@@ -21,6 +21,7 @@
   "author": "Kun Che <mr.che.kun@gmail.com> (https://chekun.me/)",
   "license": "MIT",
   "dependencies": {
+    "domutils": "^1.5.1",
     "htmlparser2": "^3.9.0"
   },
   "devDependencies": {
