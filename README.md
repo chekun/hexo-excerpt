@@ -18,10 +18,20 @@ $ npm install hexo-excerpt --save
 
 - <!-- more --> still works!
 - If you're lazy as I am, the plugin generate the excerpt for you, without breaking your sentences or codes!
+- If no <!-- more --> tag is specified, the post will be updated with excerpt and more variables.
 
 ## How?
 
-This plugin runs through all your posts, if your post has more than 10 direct tags, then the first 10 tags will be the excerpt, otherwise, excerpt will be not applied!
+This plugin runs through all your posts, if your post has more than the configured number of direct tags, then they will be the excerpt, otherwise the whole post will be used.
+
+## Configuration
+
+You can specify the size of the excerpt by adding this to your config:
+```
+excerpt_depth: 10
+```
+
+Default is 10.
 
 ## License
 
