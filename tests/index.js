@@ -1,10 +1,14 @@
 'use strict';
 
 const should = require('chai').should();
+const Hexo = require('hexo');
 const hexoExcerptGenerator = require('../lib/hexo-excerpt');
 
-let fakeHexoLocals = {
-  posts: [
+const hexo = new Hexo(__dirname, {
+  silent: true
+});
+
+let posts = [
     {
       path: '',
       title: 'post with <= 10 blocks',
@@ -42,12 +46,13 @@ let fakeHexoLocals = {
 <p>block 2 <span>123</span></p>
 <div>block3</div>`.trim()
     }
-  ]
-};
+];
+
+hexo.locals.set('posts', posts);
 
 describe('Automatic excerpt generator', () => {
 
-  let generatedPosts = hexoExcerptGenerator(fakeHexoLocals);
+  let generatedPosts = hexoExcerptGenerator.call(hexo, hexo.locals.toObject());
 
   it('post with <= 10 tags should have no excerpt', () => {
     generatedPosts[0].data.excerpt.should.equal('');
