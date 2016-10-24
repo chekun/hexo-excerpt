@@ -6,8 +6,8 @@
   "scripts": {
     "eslint": "eslint .",
     "jscs": "jscs .",
-    "test": "mocha tests/index.js",
-    "test-cover": "istanbul cover --print both _mocha -- tests/index.js"
+    "test": "mocha tests/*.js",
+    "test-cover": "istanbul cover --print both _mocha -- tests/*.js"
   },
   "directories": {
     "lib": "./lib"
