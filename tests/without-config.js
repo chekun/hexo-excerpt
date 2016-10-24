@@ -58,13 +58,15 @@ describe('Automatic excerpt generator with default depth config', () => {
 
   let generatedPosts = hexoExcerptGenerator.call(hexo, hexo.locals.toObject());
 
-  it('post with <= 10 tags should have no excerpt', () => {
+  it('post with <= 10 tags should have full content as excerpt', () => {
     generatedPosts[0].data.excerpt.should.equal('<p>block 1</p>\n<p>block 2 <span>123</span></p>\n<div>block3</div>');
+    generatedPosts[0].data.more.should.equal('');
   });
 
-  it('post with > 10 tags should have excerpt', () => {
+  it('post with > 10 tags should have excerpt and more set', () => {
     generatedPosts[1].data.excerpt.should.not.equal('');
     generatedPosts[1].data.excerpt.should.equal('<p>block 1</p>\n<p>block 2</p>\n<p>block 3</p>\n<p>block 4</p>\n<p>block 5</p>\n<p>block 6</p>\n<p>block 7</p>\n<p>block 8</p>\n<p>block 9</p>\n<p>block 10</p>');
+    generatedPosts[1].data.more.should.equal('\n<p>block 11</p>');
   });
 
   it('post with <!-- more --> should return the way it is', () => {
