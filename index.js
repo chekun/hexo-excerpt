@@ -1,5 +1,5 @@
 'use strict';
 
-const HexoExcerpt = require('./lib/hexo-excerpt');
+let excerpt = require('./lib/hexo-excerpt');
 
-hexo.extend.generator.register('excerpt', HexoExcerpt);
+hexo.extend.generator.register('excerpt', excerpt);

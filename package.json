@@ -1,13 +1,13 @@
 {
   "name": "hexo-excerpt",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Automatic excerpt generator for Hexo!",
   "main": "index",
   "scripts": {
     "eslint": "eslint .",
     "jscs": "jscs .",
-    "test": "mocha tests/index.js",
-    "test-cover": "istanbul cover --print both _mocha -- tests/index.js"
+    "test": "mocha tests/*.js",
+    "test-cover": "istanbul cover --print both _mocha -- tests/*.js"
   },
   "directories": {
     "lib": "./lib"
