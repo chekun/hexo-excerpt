@@ -19,6 +19,7 @@ $ npm install hexo-excerpt --save
 - <!-- more --> still works!
 - If you're lazy as I am, the plugin generate the excerpt for you, without breaking your sentences or codes!
 - If no <!-- more --> tag is specified, the post will be updated with excerpt and more variables.
+- CSS selector can be used to filter generated excerpt.
 
 ## How?
 
@@ -26,12 +27,16 @@ This plugin runs through all your posts, if your post has more than the configur
 
 ## Configuration
 
-You can specify the size of the excerpt by adding this to your config:
-```
-excerpt_depth: 10
-```
+You can specify the size of the excerpt by setting depth in your config, which defaults to 10.
+You can also exclude certain tags from the generated excerpt using css selectors.
+Tags matching any of the selectors will be excluded.
 
-Default is 10.
+``` yaml
+excerpt:
+  depth: 10
+  excerpt_excludes: []
+  more_excludes: []
+```
 
 ## License
 

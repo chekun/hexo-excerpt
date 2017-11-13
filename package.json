@@ -22,7 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "domutils": "^1.5.1",
-    "htmlparser2": "^3.9.0"
+    "htmlparser2": "^3.9.0",
+    "lodash.defaults": "^4.2.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
