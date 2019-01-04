@@ -28,14 +28,18 @@ This plugin runs through all your posts, if your post has more than the configur
 ## Configuration
 
 You can specify the size of the excerpt by setting depth in your config, which defaults to 10.
+
 You can also exclude certain tags from the generated excerpt using css selectors.
 Tags matching any of the selectors will be excluded.
+
+The default behaviour is to only show an excerpt if it would not be the whole post. Set `hideWholePostExcerpts` to `false` to override that and show whole post excerpts.
 
 ``` yaml
 excerpt:
   depth: 10
   excerpt_excludes: []
   more_excludes: []
+  hideWholePostExcerpts: true
 ```
 
 ## License
