@@ -1,6 +1,6 @@
 {
   "name": "hexo-excerpt",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Automatic excerpt generator for Hexo!",
   "main": "index",
   "scripts": {
