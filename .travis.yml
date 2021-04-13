@@ -13,9 +13,7 @@ node_js:
 
 script:
   - npm run eslint
-  - npm run jscs
   - npm run test-cover
 
 after_script:
-  - npm install coveralls
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run test-cover-report
