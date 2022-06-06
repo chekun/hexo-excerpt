@@ -1,6 +1,6 @@
 {
   "name": "hexo-excerpt",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Automatic excerpt generator for Hexo!",
   "main": "index",
   "scripts": {
@@ -32,8 +32,9 @@
     "coveralls": "^3.1.0",
     "eslint": "^7.24.0",
     "eslint-config-hexo": "^4.1.0",
-    "hexo": "^5.4.0",
-    "mocha": "^8.3.2",
-    "nyc": "^15.1.0"
+    "hexo": "^5.4.1",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "json-schema": "^0.4.0"  
   }
 }
