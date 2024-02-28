@@ -12,7 +12,10 @@
   "directories": {
     "lib": "./lib"
   },
-  "repository": "chekun/hexo-excerpt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chekun/hexo-excerpt.git"
+  },
   "homepage": "https://chekun.me/post/hexo-excerpt",
   "keywords": [
     "hexo",
@@ -35,6 +38,6 @@
     "hexo": "^5.4.1",
     "mocha": "^10.0.0",
     "nyc": "^15.1.0",
-    "json-schema": "^0.4.0"  
+    "json-schema": "^0.4.0"
   }
 }
